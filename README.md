@@ -6,6 +6,5 @@ https://docs.google.com/spreadsheets/d/1XXnaxxjGXc8NXYdhnAgNfXOjbmIJYBlH3ly7OncO
 
 #### EASY
 
-Problem 1 -> [Sub array with given sum](src/main/java/Array/Easy/Subarray_with_given_sum/Problem.java)
-
-**Note :-** Currently it is not optimized
+[Subarray with given sum](src/main/java/Array/Easy/Subarray_with_given_sum/Problem.java)
+||  [Problem Statement](src/main/resources/Array/Easy/Subarray_with_given_sum.md)
