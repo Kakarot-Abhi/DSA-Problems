@@ -67,15 +67,17 @@ is 15.
                 actualSum = arr[i];
                 sumStartIndex = i;
                 continue;
+            } else {
+
+                actualSum += arr[i];
+
+
+                while (actualSum > s) {
+                    actualSum -= arr[sumStartIndex];
+                    sumStartIndex++;
+                }
             }
 
-            actualSum += arr[i];
-
-
-            while (actualSum > s) {
-                actualSum -= arr[sumStartIndex];
-                sumStartIndex++;
-            }
             if (actualSum == s) {
                 // here we added 1 since we have started indexing from 0
                 result.add((sumStartIndex + 1));
