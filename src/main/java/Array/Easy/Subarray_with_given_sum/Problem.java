@@ -62,7 +62,15 @@ is 15.
         int sumStartIndex = 0;// to track starting position from where our sum is calculated
         int actualSum = 0;
         for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] > s) {
+                actualSum = arr[i];
+                sumStartIndex = i;
+                continue;
+            }
+
             actualSum += arr[i];
+
 
             while (actualSum > s) {
                 actualSum -= arr[sumStartIndex];
