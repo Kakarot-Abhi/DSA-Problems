@@ -21,27 +21,23 @@ public class Problem {
         int resultSize = A.length > B.length ? B.length : A.length;
 
         ArrayList<pair> pairs = new ArrayList<>(resultSize);
-        int pairCounter = 0;
         for (int indexA = 0; indexA < A.length; indexA++) {
             long pairFromA = A[indexA];
             for (int indexB = 0; indexB < B.length; indexB++) {
                 long pairFromB = B[indexB];
                 if ((pairFromA + pairFromB) == X) {
                     pairs.add(getPair(pairFromA, pairFromB));
-//                    resultPair[pairCounter++] = getPair(pairFromA, pairFromB);
                 }
             }
         }
 
         pairs.trimToSize();
 
-        pairs.sort((o1, o2) -> o1.first > o2.second ? 1 : 0);
-
+        pairs.sort((i1, i2) -> (i1.first == i2.first) ? 0 : ((i1.first > i2.first) ? 1 : -1));
 
         pair[] resultPair = new pair[pairs.size()];
 
         pairs.toArray(resultPair);
-        // Your code goes here
         return resultPair;
     }
 

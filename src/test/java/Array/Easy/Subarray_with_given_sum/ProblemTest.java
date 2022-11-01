@@ -1,13 +1,11 @@
 package Array.Easy.Subarray_with_given_sum;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@DisplayName("Subarray with given sum")
 public class ProblemTest {
 
     private Problem problem;
@@ -26,19 +24,25 @@ public class ProblemTest {
 
         ArrayList<Integer> outputArray = problem.findContinuousSubArray(arr, N, S);
 
-        Assertions.assertArrayEquals(outputArray.stream().mapToInt(i -> i).toArray(), new int[]{2, 4});
+        int[] actual = outputArray.stream().mapToInt(i -> i).toArray();
+
+        int[] expected = {2, 4};
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
     public void test2() {
 
-        int arr[] = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int arr[] = new int[]
+                {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int N = 10;
         int S = 15;
 
         ArrayList<Integer> outputArray = problem.findContinuousSubArray(arr, N, S);
 
-        Assertions.assertArrayEquals(outputArray.stream().mapToInt(i -> i).toArray(), new int[]{1, 5});
+        int[] expected = {1, 5};
+        int[] actual = outputArray.stream().mapToInt(i -> i).toArray();
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -50,7 +54,10 @@ public class ProblemTest {
 
         ArrayList<Integer> outputArray = problem.findContinuousSubArray(arr, N, S);
 
-        Assertions.assertArrayEquals(outputArray.stream().mapToInt(i -> i).toArray(), new int[]{38, 42});
+        int[] expected = {38, 42};
+        int[] actual = outputArray.stream().mapToInt(i -> i).toArray();
+
+        Assertions.assertArrayEquals(expected, actual);
     }
 
 
