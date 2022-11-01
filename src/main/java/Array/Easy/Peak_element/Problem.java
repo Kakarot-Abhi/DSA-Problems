@@ -13,7 +13,7 @@ public class Problem {
 
             if (previousElement <= currentElement && currentElement >= nextElement) {
                 peakEleIndex = i;
-                continue;
+                break;
             }
         }
 
