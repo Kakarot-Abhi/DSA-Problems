@@ -21,6 +21,9 @@
 [Frequencies of Limited Range Array Elements](src/main/java/Array/Easy/Frequencies_of_Limited_Range_Array_Elements/Problem.java)
 ||  [Problem Statement](src/main/resources/Array/Easy/Frequencies_of_Limited_Range_Array_Elements.md) *
 
+[Intersection of two arrays](src/main/java/Array/Easy/Intersection_of_two_arrays/Problem.java)
+||  [Problem Statement](src/main/resources/Array/Easy/Intersection_of_two_arrays.md) *
+
 #### Note
 
 ###### (*) means not fully optimize yet
