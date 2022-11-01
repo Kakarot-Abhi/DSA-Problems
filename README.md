@@ -14,3 +14,6 @@
 
 [Implement two stacks in an array](src/main/java/Array/Easy/Implement_two_stacks_in_an_array/Problem.java)
 ||  [Problem Statement](src/main/resources/Array/Easy/Implement_two_stacks_in_an_array.md)
+
+[Peak Element](src/main/java/Array/Easy/Peak_element/Problem.java)
+||  [Problem Statement](src/main/resources/Array/Easy/Peak_element.md)
