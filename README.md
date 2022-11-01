@@ -11,3 +11,6 @@
 
 [Find all pairs with a given sum](src/main/java/Array/Easy/Find_all_pairs_with_a_given_sum/Problem.java)
 ||  [Problem Statement](src/main/resources/Array/Easy/Find_all_pairs_with_a_given_sum.md)
+
+[Implement two stacks in an array](src/main/java/Array/Easy/Implement_two_stacks_in_an_array/Problem.java)
+||  [Problem Statement](src/main/resources/Array/Easy/Implement_two_stacks_in_an_array.md)

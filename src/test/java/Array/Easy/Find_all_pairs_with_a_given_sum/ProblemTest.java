@@ -1,11 +1,9 @@
 package Array.Easy.Find_all_pairs_with_a_given_sum;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@DisplayName("Find all pairs with a given sum")
 public class ProblemTest {
 
     private Problem problem;
