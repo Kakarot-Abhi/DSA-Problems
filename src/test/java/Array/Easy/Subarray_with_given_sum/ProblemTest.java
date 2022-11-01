@@ -1,13 +1,11 @@
 package Array.Easy.Subarray_with_given_sum;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@DisplayName("Subarray with given sum")
 public class ProblemTest {
 
     private Problem problem;
