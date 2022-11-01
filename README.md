@@ -7,7 +7,7 @@
 #### EASY
 
 [Subarray with given sum](src/main/java/Array/Easy/Subarray_with_given_sum/Problem.java)
-||  [Problem Statement](src/main/resources/Array/Easy/Subarray_with_given_sum.md) *
+||  [Problem Statement](src/main/resources/Array/Easy/Subarray_with_given_sum.md) * || [approch(M)](src/main/java/Array/Easy/Subarray_with_given_sum/Problem1.java)
 
 [Find all pairs with a given sum](src/main/java/Array/Easy/Find_all_pairs_with_a_given_sum/Problem.java)
 ||  [Problem Statement](src/main/resources/Array/Easy/Find_all_pairs_with_a_given_sum.md)
@@ -16,7 +16,7 @@
 ||  [Problem Statement](src/main/resources/Array/Easy/Implement_two_stacks_in_an_array.md)
 
 [Peak Element](src/main/java/Array/Easy/Peak_element/Problem.java)
-||  [Problem Statement](src/main/resources/Array/Easy/Peak_element.md)
+||  [Problem Statement](src/main/resources/Array/Easy/Peak_Element.md)
 
 [Frequencies of Limited Range Array Elements](src/main/java/Array/Easy/Frequencies_of_Limited_Range_Array_Elements/Problem.java)
 ||  [Problem Statement](src/main/resources/Array/Easy/Frequencies_of_Limited_Range_Array_Elements.md) *

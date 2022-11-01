@@ -5,7 +5,7 @@ import org.junit.jupiter.api.*;
 import java.util.ArrayList;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-@DisplayName("Subarray with given sum")
+@DisplayName("Subarray with given sum - approach2")
 public class ProblemTest {
 
     private Problem problem;
