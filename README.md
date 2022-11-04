@@ -33,6 +33,9 @@
 [Find duplicates in an array](src/main/java/Array/Easy/Find_duplicates_in_an_array/Approach1.java)
 ||  [Problem Statement](src/main/resources/Array/Easy/Find_duplicates_in_an_array.md) *
 
+[Wave Array](src/main/java/Array/Easy/Wave_Array/Approach1.java)
+||  [Problem Statement](src/main/resources/Array/Easy/Wave_Array.md)
+
 #### Note
 
 ###### (*) means not fully optimize yet
