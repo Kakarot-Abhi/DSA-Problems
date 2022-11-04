@@ -1,0 +1,9 @@
+package #INITIAL_PACKAGE#.#LAST_PACKAGE#;
+
+public class #CLASS_NAME# {
+
+    public #RETURN_TYPE# #METHOD_NAME#(#ALL_ARGS#) {
+
+        #RETURN_STATEMENT#
+    }
+}

@@ -1,0 +1,30 @@
+package #INITIAL_PACKAGE#.#LAST_PACKAGE#;
+
+import org.junit.jupiter.api.*;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@DisplayName(#LAST_PACKAGE_#)
+public class #CLASS_NAME#Test {
+
+    private #CLASS_NAME# #CLASS_NAME_LOWER_CASE#;
+
+    @BeforeAll
+    public void init() {
+        #CLASS_NAME_LOWER_CASE# = new #CLASS_NAME#();
+    }
+
+    @Test
+    public void test1() {
+
+        //long A[] = {1, 2, 4, 5, 7};
+        //long B[] = {5, 6, 3, 4, 8};
+        //int X = 9;
+
+        #CLASS_NAME_LOWER_CASE#.#METHOD_NAME#(#TEST_ALL_ARGS#);
+
+        // Please use Accordingly
+        //Assertions.assertArrayEquals(expected, actual);
+        //Assertions.assertEquals(expected, actual);
+    }
+
+}
