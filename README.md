@@ -24,6 +24,17 @@
 [Intersection of two arrays](src/main/java/Array/Easy/Intersection_of_two_arrays/Problem.java)
 ||  [Problem Statement](src/main/resources/Array/Easy/Intersection_of_two_arrays.md) *
 
+[Alternate positive and negative numbers](src/main/java/Array/Easy/Alternate_positive_and_negative_numbers/Approach1.java)
+||  [Problem Statement](src/main/resources/Array/Easy/Alternate_positive_and_negative_numbers.md) *
+
+[Smallest subarray with sum greater than x](src/main/java/Array/Easy/Smallest_subarray_with_sum_greater_than_x/Approach1.java)
+||  [Problem Statement](src/main/resources/Array/Easy/Smallest_subarray_with_sum_greater_than_x.md) **
+
+[Find duplicates in an array](src/main/java/Array/Easy/Find_duplicates_in_an_array/Approach1.java)
+||  [Problem Statement](src/main/resources/Array/Easy/Find_duplicates_in_an_array.md) *
+
 #### Note
 
 ###### (*) means not fully optimize yet
+
+###### (**) means not completed yet
