@@ -121,9 +121,7 @@ WHITE	\u001B[37m	WHITE_BACKGROUND	\u001B[47m
                         + ANSIColorCode.ANSI_RESET);
 
         PopUp dialog = new PopUp();
-        dialog.textArea1.setText(ANSIColorCode.BLACK
-                + dataForReadmeFile
-                + ANSIColorCode.ANSI_RESET);
+        dialog.textArea1.setText(dataForReadmeFile);
         dialog.pack();
         dialog.setVisible(true);
     }
