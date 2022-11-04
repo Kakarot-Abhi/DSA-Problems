@@ -108,8 +108,9 @@ WHITE	\u001B[37m	WHITE_BACKGROUND	\u001B[47m
         String dataForReadmeFile = "[" + problemName + "](src/main/java/" + initialPackage.replace("\\", "/") + "/" + packageName + "/" + mainFileName + ".java)\n" +
                 "||  [Problem Statement](src/main/resources/" + initialPackage.replace("\\", "/") + "/" + packageName + ".md)";
 
+        String note = "Please paste below contents to readme file. Note - content are already in clipboard (simply go to readme file and paste it.)\n ";
         System.out.println(ANSIColorCode.RED
-                + "Please paste below contents to readme file. Note - content are already in clipboard (simply go to readme file and paste it.)\n "
+                + note
                 + ANSIColorCode.ANSI_RESET);
 
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -121,7 +122,7 @@ WHITE	\u001B[37m	WHITE_BACKGROUND	\u001B[47m
                         + ANSIColorCode.ANSI_RESET);
 
         PopUp dialog = new PopUp();
-        dialog.textArea1.setText(dataForReadmeFile);
+        dialog.textArea1.setText(note + dataForReadmeFile);
         dialog.pack();
         dialog.setVisible(true);
     }
