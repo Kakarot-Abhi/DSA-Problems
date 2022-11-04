@@ -14,6 +14,7 @@ public class Approach1Test {
     }
 
     @Test
+    @Disabled("pending beacause to O(n)")
     public void test1() {
 
         int Arr[] = {9, 4, -2, -1, 5, 0, -5, -3, 2};
@@ -28,6 +29,7 @@ public class Approach1Test {
     }
 
     @Test
+    @Disabled("pending beacause to O(n)")
     public void test2() {
 
         int Arr[] = {-5, -2, 5, 2, 4, 7, 1, 8, 0, -8};
