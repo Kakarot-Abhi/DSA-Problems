@@ -63,6 +63,7 @@ WHITE	\u001B[37m	WHITE_BACKGROUND	\u001B[47m
     public TemplateGenerator(TemplateData templateData) {
         initialPackage = templateData.getInitialPackage();
         packageName = templateData.getProblemName();
+        problemName = packageName.replace("_", " ");
         mainFileName = templateData.getMainFileName();
         methodName = templateData.getMethodName();
         methodReturnType = templateData.getMethodReturnType();
