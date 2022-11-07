@@ -208,7 +208,7 @@ WHITE	\u001B[37m	WHITE_BACKGROUND	\u001B[47m
 
     public String readFileAsString(String path) {
         try {
-            return new String(IOUtils.readAllBytes(new FileInputStream(new File(path))));
+            return new String(Files.readAllBytes(new File(path).toPath()));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
