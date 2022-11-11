@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Generator template</title>
+</head>
+
+<body>
+<div class="mainbody">
+
+
+    <form>
+        <p class="font-weight-bold text-center h3">Template Generator</p>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Outer Package</label>
+            <input aria-describedby="emailHelp" class="form-control" id="outerPackage" type="text"
+            >
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Problam Name</label>
+            <input class="form-control" id="problemName" type="text">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Java File Name</label>
+            <input class="form-control" id="javaFileName" type="text">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Method Name</label>
+            <input class="form-control" id="methodName" type="text">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Method Return Type</label>
+            <input class="form-control" id="methodReturnType" type="text">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Method Return Statement</label>
+            <input class="form-control" id="methodReturnStatement" type="text">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Method Arguments</label>
+            <input class="form-control" id="methodArguments" type="text">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Problem Statement Question</label>
+            <textarea class="form-control" id="problemStatement" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block" id="generate" onclick="createTemplate()" type="button">Generate
+            Template
+        </button>
+    </form>
+</div>
+</body>
+
+</html>
