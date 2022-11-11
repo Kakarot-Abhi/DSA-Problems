@@ -3,14 +3,12 @@ package utils;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
-import sun.misc.IOUtils;
 import utils.templateUI.PopUp;
 
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.Arrays;
@@ -208,7 +206,7 @@ WHITE	\u001B[37m	WHITE_BACKGROUND	\u001B[47m
 
     public String readFileAsString(String path) {
         try {
-            return new String(IOUtils.readAllBytes(new FileInputStream(new File(path))));
+            return new String(Files.readAllBytes(new File(path).toPath()));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
