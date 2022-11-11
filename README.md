@@ -18,23 +18,25 @@
 
 4. [Peak Element](src/main/java/Array/Easy/Peak_element/Problem.java)
    ||  [Problem Statement](src/main/resources/Array/Easy/Peak_Element.md)
+5. [Peak element2](src/main/java/Array/Easy/Peak_element2/Approach1.java)
+   ||  [Problem Statement](src/main/resources/Array/Easy/Peak_element2.md)
 
-5. [Frequencies of Limited Range Array Elements](src/main/java/Array/Easy/Frequencies_of_Limited_Range_Array_Elements/Problem.java)
+6. [Frequencies of Limited Range Array Elements](src/main/java/Array/Easy/Frequencies_of_Limited_Range_Array_Elements/Problem.java)
    ||  [Problem Statement](src/main/resources/Array/Easy/Frequencies_of_Limited_Range_Array_Elements.md) *
 
-6. [Intersection of two arrays](src/main/java/Array/Easy/Intersection_of_two_arrays/Problem.java)
+7. [Intersection of two arrays](src/main/java/Array/Easy/Intersection_of_two_arrays/Problem.java)
    ||  [Problem Statement](src/main/resources/Array/Easy/Intersection_of_two_arrays.md) *
 
-7. [Alternate positive and negative numbers](src/main/java/Array/Easy/Alternate_positive_and_negative_numbers/Approach1.java)
+8. [Alternate positive and negative numbers](src/main/java/Array/Easy/Alternate_positive_and_negative_numbers/Approach1.java)
    ||  [Problem Statement](src/main/resources/Array/Easy/Alternate_positive_and_negative_numbers.md) *
 
-8. [Smallest subarray with sum greater than x](src/main/java/Array/Easy/Smallest_subarray_with_sum_greater_than_x/Approach1.java)
+9. [Smallest subarray with sum greater than x](src/main/java/Array/Easy/Smallest_subarray_with_sum_greater_than_x/Approach1.java)
    ||  [Problem Statement](src/main/resources/Array/Easy/Smallest_subarray_with_sum_greater_than_x.md) **
 
-9. [Find duplicates in an array](src/main/java/Array/Easy/Find_duplicates_in_an_array/Approach1.java)
-   ||  [Problem Statement](src/main/resources/Array/Easy/Find_duplicates_in_an_array.md) *
+10. [Find duplicates in an array](src/main/java/Array/Easy/Find_duplicates_in_an_array/Approach1.java)
+    ||  [Problem Statement](src/main/resources/Array/Easy/Find_duplicates_in_an_array.md) *
 
-10. [Wave Array](src/main/java/Array/Easy/Wave_Array/Approach1.java)
+11. [Wave Array](src/main/java/Array/Easy/Wave_Array/Approach1.java)
     ||  [Problem Statement](src/main/resources/Array/Easy/Wave_Array.md)
 
 11. [Remove duplicate elements from sorted Array](src/main/java/Array/Easy/Remove_duplicate_elements_from_sorted_Array/Approach1.java)
