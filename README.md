@@ -38,7 +38,7 @@
     ||  [Problem Statement](src/main/resources/Array/Easy/Wave_Array.md)
 
 11. [Remove duplicate elements from sorted Array](src/main/java/Array/Easy/Remove_duplicate_elements_from_sorted_Array/Approach1.java)
-    ||  [Problem Statement](src/main/resources/Array/Easy/Remove_duplicate_elements_from_sorted_Array.md) **
+    ||  [Problem Statement](src/main/resources/Array/Easy/Remove_duplicate_elements_from_sorted_Array.md)
 
 #### Note
 
