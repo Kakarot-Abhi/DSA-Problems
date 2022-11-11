@@ -3,38 +3,44 @@ package Array.Easy.Remove_duplicate_elements_from_sorted_Array;
 public class Approach1 {
 
     public int remove_duplicate(int[] A, int N) {
+        int start = 0;
+        int end = 1;
+        int nextGreater = 1;
 
-        int MARKER = Integer.MIN_VALUE;
-        int pointer1 = 0;// indicate index of starting duplicate element
-        int pointer2 = 1;// indicate index of ending duplicate element
-        int uniqueElementCount = 1;  // here we assume atleast 1 element to be unique
-
-
-        for (int index = 0; index < N; index++) {
-            if (A[pointer1] == A[pointer2]) {
-                A[pointer2] = MARKER;
-            } else {
-                pointer1 = pointer2;
-                uniqueElementCount++;
-            }
-            pointer2++;
-            if (pointer2 == N)
-                break;
-        }
-
-        for (int index = 0; index < N; index++) {
-
-        }
-
-        int[] uniqueElements = new int[uniqueElementCount];
-
-        for (int index = 0, uniqueIndex = 0; index < N; index++) {
-            if (A[index] == MARKER)
+        while ((end <= N || start <= end) && (nextGreater < N)) {
+            if (A[start] < A[end]) {
+                start++;
+                end++;
+                nextGreater = end;
                 continue;
-            uniqueElements[uniqueIndex++] = A[index];
+            }
+
+            if (A[start] == A[end] && end == nextGreater) {
+                nextGreater++;
+                continue;
+            }
+
+            if (A[start] == A[nextGreater] && (A[start] == A[end] || (A[start] > A[end]))) {
+                nextGreater++;
+                continue;
+            }
+
+            if (A[start] < A[nextGreater]) {
+                int temp = A[nextGreater];
+                A[nextGreater] = A[end];
+                A[end] = temp;
+
+                start++;
+                end++;
+                continue;
+            }
+
+            if (A[start] > A[end]) {
+                nextGreater++;
+            }
         }
 
-        return 0;
+        return start + 1;
     }
 }
 
