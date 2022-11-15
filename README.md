@@ -39,8 +39,11 @@
 11. [Wave Array](src/main/java/Array/Easy/Wave_Array/Approach1.java)
     ||  [Problem Statement](src/main/resources/Array/Easy/Wave_Array.md)
 
-11. [Remove duplicate elements from sorted Array](src/main/java/Array/Easy/Remove_duplicate_elements_from_sorted_Array/Approach1.java)
+12. [Remove duplicate elements from sorted Array](src/main/java/Array/Easy/Remove_duplicate_elements_from_sorted_Array/Approach1.java)
     ||  [Problem Statement](src/main/resources/Array/Easy/Remove_duplicate_elements_from_sorted_Array.md)
+
+13. [Binary Search](src/main/java/search/binary_search/Approach1.java)
+    ||  [Problem Statement](src/main/resources/search/binary_search/Binary_Search.md)
 
 #### Note
 
