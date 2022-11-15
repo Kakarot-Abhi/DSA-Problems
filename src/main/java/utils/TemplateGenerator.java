@@ -68,7 +68,8 @@ WHITE	\u001B[37m	WHITE_BACKGROUND	\u001B[47m
         methodReturnStatement = templateData.getMethodReturnStatement();
         methodAllArgs = templateData.getMethodAllArgs();
         problemStatementQuestion = templateData.getProblemStatementQuestion();
-
+        ArraysEasyPath = "java\\" + initialPackage;
+        testFileName = mainFileName + "Test";
         startCreatingTemplate();
     }
 
