@@ -45,6 +45,9 @@
 13. [Binary Search](src/main/java/search/binary_search/Approach1.java)
     ||  [Problem Statement](src/main/resources/search/binary_search/Binary_Search.md)
 
+14. [ew](src/main/java/Arrayqw/wqw/ew/Approach1.java)
+    ||  [Problem Statement](src/main/resources/Arrayqw/wqw/ew.md)
+
 #### Note
 
 ###### (*) means not fully optimize yet

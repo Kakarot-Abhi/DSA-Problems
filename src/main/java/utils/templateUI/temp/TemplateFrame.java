@@ -222,9 +222,16 @@ public class TemplateFrame extends JFrame implements ActionListener {
             if (StringUtils.equals(actionCommand, PREVIEW)) {
                 generateTemplate();
             } else {
+
+                if (StringUtils.isAnyBlank(mainFileTextArea.getText(), testFileTextArea.getText())) {
+                    JOptionPane.showMessageDialog(this, "Please click preview first", "Error", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+
                 templateGenerator.createFilesAndWriteToFiles(mainFileTextArea.getText(), testFileTextArea.getText());
 
                 JOptionPane.showMessageDialog(this, "Template created successfully", "Success", JOptionPane.INFORMATION_MESSAGE);
+                System.exit(0);
 
             }
 
@@ -246,7 +253,7 @@ public class TemplateFrame extends JFrame implements ActionListener {
 
     private void generateTemplate() {
         String outerPackage = String.join("\\", (String) level1ComboBox.getSelectedItem(), (String) level2ComboBox.getSelectedItem());
-        String problemName = problemNameJtextField.getText();
+        String problemName = problemNameJtextField.getText().replace(" ", "_");
         String javaFileName = javaFileNameJtextField.getText();
         String methodName = methodNameJtextField.getText();
         String returnType = (String) methodReturnTypeComboBox.getSelectedItem();
@@ -255,6 +262,7 @@ public class TemplateFrame extends JFrame implements ActionListener {
         String problemStatement = problemStatementJtextarea.getText();
 
         TemplateData templateData = new TemplateData(outerPackage, problemName, javaFileName, methodName, returnType, returnStatement, arguments);
+        templateData.setProblemStatementQuestion(problemStatement);
 
         templateGenerator = new TemplateGenerator(templateData);
         String[] fileData = templateGenerator.startCreatingTemplate();
