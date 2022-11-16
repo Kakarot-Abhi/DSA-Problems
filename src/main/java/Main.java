@@ -1,7 +1,7 @@
-import utils.templateUI.TemplateUi;
+import utils.templateUI.temp.TemplateFrame;
 
 public class Main {
-    public static void main(String[] args) {
-        TemplateUi.main(args);
+    public static void main(String[] args) throws Exception {
+        TemplateFrame.main(args);
     }
 }
