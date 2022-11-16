@@ -3,7 +3,6 @@ package utils;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
-import utils.templateUI.PopUp;
 
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
@@ -70,11 +69,9 @@ WHITE	\u001B[37m	WHITE_BACKGROUND	\u001B[47m
         problemStatementQuestion = templateData.getProblemStatementQuestion();
         ArraysEasyPath = "java\\" + initialPackage;
         testFileName = mainFileName + "Test";
-        startCreatingTemplate();
     }
 
     public TemplateGenerator() {
-        startCreatingTemplate();
     }
 
     public static void main(String[] args) {
@@ -91,16 +88,18 @@ WHITE	\u001B[37m	WHITE_BACKGROUND	\u001B[47m
         new TemplateGenerator(templateData);
     }
 
-    private void startCreatingTemplate() {
+    public String[] startCreatingTemplate() {
         String mainFileContents = getMainFileContents();
         String testFileContents = getTestFileContents();
 
         testFileContents = getUpdateTestFileContents(testFileContents);
         mainFileContents = getUpdateMainFileContents(mainFileContents);
 
+        return new String[]{mainFileContents, testFileContents};
 
-        File f = new File("temp.text");
+    }
 
+    public void createFilesAndWriteToFiles(String mainFileContents, String testFileContents) {
         createNecessaryFiles(isProblemStatementRequired);
         writeDataToNecessaryFiles(mainFileContents, testFileContents, problemStatementQuestion, isProblemStatementRequired);
 //
@@ -114,16 +113,6 @@ WHITE	\u001B[37m	WHITE_BACKGROUND	\u001B[47m
 
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(new StringSelection(dataForReadmeFile), new StringSelection(dataForReadmeFile));
-
-        System.out.println(
-                ANSIColorCode.BLACK
-                        + dataForReadmeFile
-                        + ANSIColorCode.ANSI_RESET);
-
-        PopUp dialog = new PopUp();
-        dialog.textArea1.setText(note + dataForReadmeFile);
-        dialog.pack();
-        dialog.setVisible(true);
     }
 
     public String getProblemStatmentFilePath() {
