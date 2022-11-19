@@ -45,6 +45,9 @@
 13. [Binary Search](src/main/java/search/binary_search/Approach1.java)
     ||  [Problem Statement](src/main/resources/search/binary_search/Binary_Search.md)
 
+14. [Floor in a Sorted Array](src/main/java/search/binary_search/Floor_in_a_Sorted_Array/Approach1.java)
+    ||  [Problem Statement](src/main/resources/search/binary_search/Floor_in_a_Sorted_Array.md)
+
 #### Note
 
 ###### (*) means not fully optimize yet
